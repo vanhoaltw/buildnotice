@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "ES2019",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "incremental": true,
+    "noErrorTruncation": true,
+    "stripInternal": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/node_modules", "**/.*/", "**/dist", "**/src/__tests__"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
