@@ -1,7 +1,7 @@
 {
-  "name": "buildnotify",
+  "name": "@vanhoaltw/buildnotify",
   "version": "1.0.0",
-  "description": "",
+  "description": "Notify version build to group chat",
   "engines": {
     "node": "^12.20.0 || >=14.13.1"
   },
@@ -14,7 +14,7 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
-  "author": "",
+  "author": "vanhoaltw",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.2",
@@ -35,5 +35,21 @@
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
-  }
+  },
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanhoaltw/buildnotice.git"
+  },
+  "keywords": [
+    "telegram",
+    "slack",
+    "notice",
+    "build",
+    "version"
+  ],
+  "bugs": {
+    "url": "https://github.com/vanhoaltw/buildnotice/issues"
+  },
+  "homepage": "https://github.com/vanhoaltw/buildnotice#readme"
 }
